@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Odibee+Sans&family=Press+Start+2P&family=Raleway:wght@100&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<script src="java.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><h1>Igre <b> 123</b></h1></div>
+        <div class="none1 nav"><h3><a href="#main">Slider</a></h3></div>
+        <div class="nav"><h3><a href="#onama">O nama</a></h3></div>
+        <div class="nav"><h3><a href="#galerija">Galerija</a></h3></div>
+        <div class="nav"><h3><a href="#kontakt">Kontakt</a></h3></div>
+    </div>
+    
+
+    <div class="main" id="main">
+        <div class="about">
+            <div class="onama" id="onama"> <h2>O nama  i našim igrama koje mjnenjaju svijet.</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae mattis nulla. Donec tincidunt ipsum ex, at rhoncus ligula feugiat vitae. Phasellus condimentum, sapien eget sollicitudin rhoncus, est velit laoreet felis, quis fermentum sem tellus sit amet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br><br> Curabitur est nunc, elementum non malesuada ut, convallis eget augue. Nullam sed sodales mauris, quis luctus enim. Fusce et enim ac elit mollis laoreet vel in mauris. Vestibulum a enim vitae ligula pretium porta eget at tellus. Phasellus interdum eleifend arcu eu volutpat. Fusce laoreet nulla sit amet tellus rhoncus aliquet a in tellus.
+
+                </p></div>
+            <div class="igrica">   
+            <div class="igricaime">
+                    <h2 id="csgo">CS:GO</h2>
+                    <h2 class="none" id="fortnite">Fortnite</h2>
+                    <h2 class="none" id="lol">League of Legends</h2>
+                    <h2 class="none" id="skyrim">Skyrim</h2>
+                </div>
+                <div class="oigrici">
+                    <p>Integer ut ultrices sapien. Nam odio urna, accumsan ut bibendum eu, bibendum ut magna. Mauris dolor turpis, vestibulum et lorem at, placerat sodales ex. Donec sagittis, enim eget vulputate egestas, risus urna fringilla elit, eget ultrices tellus tellus sit amet urna. Suspendisse condimentum nulla nec sem pellentesque posuere. Donec placerat scelerisque blandit. Ut at sollicitudin mauris, sit amet varius arcu. Aliquam imperdiet sed neque hendrerit euismod.</p></div>
+            
+                </div> </div>
+        
+<div class="slider">
+    <div class="slikaslider mySlides fade"><img class="cs" src="assets/slike/cs.png" alt="cs"></div>
+    <div class="slikaslider none mySlides fade"><img class="cs" src="assets/slike/fortnite.jpg" alt="cs"></div>
+    <div class="slikaslider none mySlides fade"><img class="cs" src="assets/slike/lol.jpg" alt="cs"></div>
+    <div class="slikaslider none mySlides fade"><img class="cs" src="assets/slike/skyrim.webp" alt="cs"></div>
+
+    <a class="prev" onclick="plusSlides(-1) ; show() ">&#10094;</a>
+<a class="next" onclick="plusSlides(1) ;show()">&#10095;</a>
+</div>
+    </div>
+    <div class="galerija" id="galerija"><div class="galerijanav"><h4>Galerija</h4></div>
+    <a href="#main">
+    <div class="slike">
+        <div class="slika" onclick="currentSlide(1);show()"><img class="cs" src="assets/slike/cs.png" alt="cs"></div>
+        <div class="slika" onclick="currentSlide(2);show()"><img class="cs" src="assets/slike/fortnite.jpg" alt="cs"></div>
+        <div class="slika" onclick="currentSlide(3);show()"><img  class="cs"src="assets/slike/lol.jpg" alt="cs"></div>
+        <div class="slika" onclick="currentSlide(4);show()"><img class="cs" src="assets/slike/skyrim.webp" alt="cs"></div>
+    </div></a></div>
+    <div class="kontakt" id="kontakt">
+        <div class="podatci">
+        <h4 style="color:black;">Kontakt</h4>
+    <p>Email: Igrice123@gmail.com <br> Adresa:Teslina 30b <br>Kontakt:+352 95 389 4556</p>
+    </div>
+<div class="forma" id="forma">
+    <form>
+        
+        <label >Puno ime:</label><br>
+        <input type="text" id="ime" placeholder="Tvoje puno ime.."><br><br>
+        <label >E-mail:</label><br>
+        <input type="email" id="email" placeholder="Tvoj email.."><br>
+        <div class="none" id="error"> <mark> Niste unjeli sve trazene podatke</mark></div><br>
+        <label >Poruka:</label><br>
+        <textarea rows="5" cols="20" ></textarea><br><br>
+        <button id="button" type="button" value="send" class="btn btn-primary" onclick="errorText()">Submit</button>
+      </form>
+    </div>
+<div>
+
+</div>
+</div>
+
+</body>
+</html>

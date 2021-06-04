@@ -1,0 +1,367 @@
+body{
+    display:flex;
+    flex-direction: column;
+background-color: black;
+}
+
+.navbar{
+    width:100%;
+    height:100px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    border-bottom: white;
+border-width: 1px;
+border-style: solid;
+}
+.logo{
+    padding-right: 50%;
+    margin-left:3%;
+width: 15%;
+height: auto;
+}
+.nav{
+width: 10%;
+height: auto;
+align-content: center;
+font-size: medium;
+
+}
+
+.main{
+    width: 100%;
+    height: 900px;
+    
+    display: flex;
+    
+}
+.slider{
+    height: 95%;
+    width: 45%;
+    
+}
+.about{
+    
+    height: 100%;
+    width:55%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.igrica{
+    margin-top: 5%;
+    display:flex;
+  height: 45%;
+  width: 80%;
+    padding:20px;
+    flex-direction: column;
+    padding-left:30px;
+}
+.igricaime{
+    width: 100%;
+    height:40%;
+    
+    
+}
+.oigrici{
+    width: 100%;
+    height:60%;
+    
+    
+}
+.onama{
+    margin-top: 5%;
+  padding: 30px;
+    width: 80%;
+    height:50%;
+    
+}
+.galerija{
+    height: 650px;
+    width: 100%;
+    
+    border-width: 2px;
+    margin-top:150px;
+}
+.galerijanav{
+    width:500px;
+    border-style: solid;
+  border-width: 1px;
+  border-top-color: white;
+    height: auto;
+align-content: center;
+    margin-left:30px;
+}
+.slike{
+    height: 88%;
+    width: 100%;
+    
+    display: flex;
+}
+.slika{
+    height: 100%;
+    width:25%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.cs{
+    height: 100%;
+    opacity: 60%;
+    transition: 0.6s ease;
+}
+.cs:hover{
+ opacity: 100%;
+}
+.kontakt{
+    border-style: solid;
+  border-width: 20px;
+  border-color: rgb(192, 192, 192);
+    margin-top: 200px;
+    height: 700px;
+    width: 50%;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    background-color:white;
+    align-self: center;
+    justify-content: center;
+}
+.podatci{
+    height: 35%;
+    width:100%;
+}
+.forma{
+    height: 60%;
+    width: 70%;
+    margin-top: 5%;
+    background-color: grey;
+    align-self: center;
+    border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.slikaslider{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center ;
+    overflow: hidden;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .none {
+      display: none;
+}
+.none1{
+    display: none;
+}
+input[type=text], select, input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+a{
+    color:white;
+    font-family: 'Raleway', sans-serif;
+}
+  h1{
+      color:white;
+      font-size: 25px;
+      font-family: 'Press Start 2P', cursive;
+  }
+  h2{
+      color: white;
+      font-size: 60px;
+  }
+  p{
+      color: white;
+      font-size: 20px;
+  }
+  h4{
+    color: white;
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  .kontakt p{
+      color:black;
+  }
+
+@media only screen and (max-width: 1200px) {
+    .logo{
+        width: 20%;
+        padding-right: 30%;
+    }.none1{
+        display:flex;
+    }
+    .nav{
+        width: 15%;
+    }
+      .main{
+        flex-direction: column ;
+    height: 1400px;
+      }
+      .slider{
+      order:1;
+      width: 100%;
+      height: 40%;
+      }
+      .about{
+          width: 100%;
+          order:2;
+          height: 60%;
+      }
+      .igrica{
+          height: 40%;
+          width: 95%;
+      }
+      .igricaime{
+          order:1;
+        
+      }
+      .oigrici{
+          order:2;
+          width: 100%;
+      }
+      .onama{
+          width:95%;
+          margin-top: -1%;
+          height: 60%;
+          order:3;
+      }
+      .galerija{
+          height:400px
+      }
+      .kontakt{
+          width: 80%;
+          margin-top:300px;
+      }
+    
+  }
+  @media only screen and (max-width: 650px) {
+    
+    .nav{
+        display:none;
+    }
+    .logo{
+        width:auto;
+
+    }
+    .main{
+        height: 1300px;
+        overflow: hidden;
+        
+    }
+  .slider{
+      height: 40%;
+      ;
+  }
+  .about{
+      height: 60%;
+  }
+  .galerija{
+      height: 200px;
+  }
+   .galerijanav{
+       width: 300px;
+   }   
+      
+  
+  .kontakt{
+      width: 95%;
+      border-right-width: 0px;
+      border-left-width: 0px;
+  }
+  h4{
+      font-size: 40px;
+  }
+h2{
+    color: white;
+    font-size: 50px;
+}
+p{
+    color: white;
+    font-size: 17px;
+}
+
+}
+@media only screen and (max-width: 500px) {
+.main{
+    height: 1100px;
+}
+    .galerijanav{
+    margin-left: 5px;
+}
+.igrica{
+    padding:5px;
+}
+.onama{
+    padding:5px;
+}
+h2{
+  color: white;
+  font-size: 40px;
+}
+p{
+  color: white;
+  font-size: 13px;
+}
+}
+  
